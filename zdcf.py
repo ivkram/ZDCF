@@ -183,7 +183,7 @@ def zdcf(a, b, max_shift=1, show_plot=True, title='ZDCF'):
 
 if __name__ == '__main__':
     # read the weekly binned gamma-ray light curve of the quasar 4FGL J1512.8-0906 (1510-089)
-    gamma = pd.read_csv('J1512.8-0906.txt',
+    gamma = pd.read_csv('J1512.8-0906',
                         names=['source', 'start', 'end', 'flux', 'err'],
                         dtype={('start', 'end', 'flux', 'err'): np.float16},
                         delimiter=',',
@@ -191,7 +191,7 @@ if __name__ == '__main__':
     gamma['epoch'] = (gamma.start + gamma.end) / 2
 
     # read the radio light curve of the quasar 4FGL J1512.8-0906 (1510-089)
-    radio = pd.read_csv('1510-089.txt',
+    radio = pd.read_csv('1510-089',
                         names=['source', 'epoch', 'flux'],
                         dtype={'flux': np.float16},
                         parse_dates=[1],
