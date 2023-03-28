@@ -1,4 +1,4 @@
-The `zdcf.py` module is a Pyhton 3 version of the ZDCF algorithm for estimation of the cross-correlation function for discrete, sparse astronomical time series. This method was originally proposed and implemented in Fortran by Tal Alxander in 1997 [1][2][3].
+The `zdcf.py` module is a Pyhton 3 implementation of the ZDCF algorithm for estimation of the cross-correlation function of sparse, unevenly sampled astronomical time series. This method was originally proposed and implemented in Fortran by Prof. Tal Alxander in 1997 [1][2][3].
 
 ## Current status
 
